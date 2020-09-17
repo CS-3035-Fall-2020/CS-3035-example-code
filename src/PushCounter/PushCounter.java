@@ -32,9 +32,9 @@ public class PushCounter extends Application
 
         FlowPane pane = new FlowPane(push, countText);
         pane.setAlignment(Pos.CENTER);
-        //pane.setHgap(20);
-        //pane.setVgap(200);
-        //pane.setStyle("-fx-background-color: cyan");
+        pane.setHgap(20);
+        pane.setVgap(200);
+        pane.setStyle("-fx-background-color: cyan");
 
         Scene scene = new Scene(pane, 300, 100);
 
