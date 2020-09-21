@@ -30,10 +30,10 @@ import java.util.Date;
 public class Main extends Application {
     private Label time;
     private Label message;
-    private static DateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+    private static final DateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) {
         primaryStage.setTitle("Property Change Event");
 
         // the label for displaying the time, when it is updated, update the message
