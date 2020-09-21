@@ -10,8 +10,9 @@ import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
 /**
- * PushCounter.java 	 Author: Lewis/Loftus
+ * PushCounter.java
  * Demonstrates JavaFX buttons and event handlers.
+ * @author Lewis/Loftus
 */
 public class PushCounter extends Application
 {

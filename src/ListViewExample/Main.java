@@ -20,7 +20,7 @@ import javafx.scene.layout.VBox;
 /**
  * A toy example to show how a ListView works. An object with an external model.
  *
- * @author scottb
+ * @author scottbateman
  *
  */
 

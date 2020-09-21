@@ -7,6 +7,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+/**
+ * Hello World in JavaFX
+ * @author Lewis/Loftus
+ */
+
 public class Main extends Application
 {
 	//--------------------------------------------------------------------

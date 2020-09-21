@@ -6,6 +6,11 @@ import javafx.scene.layout.Pane;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * HelloWorld in JavaFX with FXML.
+ * @author scottbateman
+ */
+
 public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {

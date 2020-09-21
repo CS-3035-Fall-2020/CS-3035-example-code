@@ -25,7 +25,7 @@ import javafx.scene.text.Text;
  * Based on the example from https://docs.oracle.com/javafx/2/get_started/form.htm
  * There is good description of what is happening there.
  *
- * @author scottb
+ * @author scottbateman
  *
  */
 public class Main extends Application {
