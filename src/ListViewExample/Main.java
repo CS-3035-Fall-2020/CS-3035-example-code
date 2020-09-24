@@ -1,20 +1,19 @@
 package ListViewExample;
 
-import javafx.application.Platform;
-import javafx.collections.*;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.geometry.Orientation;
-import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.cell.TextFieldListCell;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 /**
@@ -55,6 +54,7 @@ public class Main extends Application {
                 if (newNames.isEmpty())
                     add.setDisable(true);
             });
+
             root.getChildren().add(add);
 
             ListView<String> horizontalListView = new ListView<>(names);

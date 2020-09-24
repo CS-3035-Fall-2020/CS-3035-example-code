@@ -3,6 +3,7 @@ package StyleOptionsWithCheckBoxes;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 //************************************************************************
@@ -20,7 +21,6 @@ public class Main extends Application
 		StyleOptionsPane pane = new StyleOptionsPane();
 		pane.setAlignment(Pos.CENTER);
 		pane.setStyle("-fx-background-color: skyblue");
-
 		Scene scene = new Scene(pane, 400, 150);
 
 		primaryStage.setTitle("Style Options");

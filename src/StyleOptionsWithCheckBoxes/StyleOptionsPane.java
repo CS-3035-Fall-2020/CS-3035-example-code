@@ -2,6 +2,7 @@ package StyleOptionsWithCheckBoxes;
 
 import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -31,13 +32,14 @@ public class StyleOptionsPane extends VBox
 
 		boldCheckBox = new CheckBox("Bold");
 		boldCheckBox.setOnAction(this::processCheckBoxAction);
+
 		italicCheckBox = new CheckBox("Italic");
 		italicCheckBox.setOnAction(this::processCheckBoxAction);
 
-		HBox options = new HBox(boldCheckBox, italicCheckBox);
+		HBox options = new HBox(20, boldCheckBox, italicCheckBox);
+
 		options.setAlignment(Pos.CENTER);
-		options.setSpacing(20);	//between the check boxes
-		
+
 		setSpacing(20);		//between the text and the check boxes
 		getChildren().addAll(phrase, options);
 	}
