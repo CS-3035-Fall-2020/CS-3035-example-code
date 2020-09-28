@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.ArcType;
@@ -25,7 +26,7 @@ public class Main extends Application {
         canvas.setOnMouseClicked(new ClickHandler(g));
 
         g.setFill(Color.BLUE);
-        g.fillRect(0, 175, scene.getWidth(), scene.getHeight());  // ground
+        g.fillRect(0, 175, scene.getWidth(), scene.getHeight() - 175);  // ground
 
         g.setFill(Color.YELLOW);
         g.fillOval(-40, -40, 80, 80);  // sun
@@ -42,7 +43,7 @@ public class Main extends Application {
         g.fillOval(mid-10, top+10, 5, 5);   // left eye
         g.fillOval(mid+5, top+10, 5, 5);    // right eye
 
-        g.fillArc(mid-10, top+20, 20, 10, 190, 160, ArcType.ROUND);   // smile
+        g.fillArc(mid-10, top+20, 20, 10, 190, 160, ArcType.OPEN);   // smile
 
         g.strokeLine(mid-25, top+60, mid-50, top+40);  // left arm
         g.strokeLine(mid+25, top+60, mid+55, top+60);  // right arm
