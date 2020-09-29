@@ -59,7 +59,7 @@ public class ColorFlipWidget extends StackPane {
     public void setCounter(int count)
     {
         counter.set(count);
-        updateColor();
+        //updateColor();
     }
 
     /**
