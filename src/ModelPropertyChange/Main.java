@@ -20,7 +20,7 @@ import java.util.Date;
  * The main purpose of this example is to demonstrate adding listeners to models, so that when
  * a widget's model is updated you can take action.
  *
- * However, doing a repeated Task.
+ * However, doing a repeated Task that updates a model is also demonstrated.
  *
  * The example is of a clock that has a message counting the number of zeros in the currently display time.
  *

@@ -5,10 +5,14 @@ import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
 
+import java.util.Date;
+
 /**
  * Simple demonstration layout pane that puts all children in the bottom right hand corner.
  */
 public class MyCustomPane extends Pane {
+
+    private static int count = 0;
 
     public MyCustomPane()
     {
@@ -32,8 +36,11 @@ public class MyCustomPane extends Pane {
             //relocate vs translate:
             // layout algorithms should use relocate by convention
             // application programmers would use translate
-            //System.out.println(this.getWidth() - n.getBoundsInParent().getWidth());
             n.relocate(this.getWidth() - n.getBoundsInParent().getWidth(),this.getHeight() - n.getBoundsInParent().getHeight());
+            n.translateXProperty().set(-100);
+
         }
+        System.out.println(count++);
+
     }
 }
