@@ -9,7 +9,6 @@ import javafx.scene.shape.Shape;
 
 public class Model {
 	private SimpleListProperty<Rectangle> squareListProperty;
-
 	private int squareSideLength;
 
 	public Model(int squareSideLength) {
@@ -24,12 +23,12 @@ public class Model {
 		return squareListProperty;
 	}
 
-	public int getSquareSideLegnth() {return squareSideLength;}
+	public int getSquareSideLength() {return squareSideLength;}
 
 	public void addSquare(double x, double y)
 	{
-		int squareX = (int) x - Main.model.getSquareSideLegnth()/2;
-		int squareY = (int) y - Main.model.getSquareSideLegnth()/2;
+		double squareX = x - Main.model.getSquareSideLength()/2;
+		double squareY = y - Main.model.getSquareSideLength()/2;
 		
 		Rectangle newSquare = new Rectangle(squareX, squareY, squareSideLength, squareSideLength);
 		squareListProperty.add(newSquare);
