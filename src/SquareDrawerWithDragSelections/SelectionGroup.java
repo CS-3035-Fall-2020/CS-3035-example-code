@@ -29,6 +29,7 @@ public class SelectionGroup {
 	
 	public BoundingBox getBoundingBox()
 	{
+		calculateBoundingBox();
 		return bounds;
 	}
 	
