@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<ToolBar xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment5_Part2.ToolBarController">
+	<fx:define>
+		<ToggleGroup fx:id="colorGroup" />
+		<ToggleGroup fx:id="actionGroup" />
+	</fx:define>
+	<ToggleButton fx:id="greenButton" selected="true" text="green" toggleGroup="$colorGroup" style="-fx-base: lightgreen;" onAction="#colorButtonAction"/>
+	<ToggleButton fx:id="redButton" text="red" toggleGroup="$colorGroup" style="-fx-base: salmon" onAction="#colorButtonAction"/>
+	<ToggleButton fx:id="blueButton" text="blue" toggleGroup="$colorGroup" style="-fx-base: lightblue;" onAction="#colorButtonAction"/>
+	<Separator />
+	<ToggleButton fx:id="createButton" selected="true" text="create" toggleGroup="$actionGroup" onAction="#actionButtonAction" />
+	<ToggleButton fx:id="deleteButton" text="delete" toggleGroup="$actionGroup" onAction="#actionButtonAction"/>
+</ToolBar>

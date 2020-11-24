@@ -45,5 +45,4 @@ public class GraphView extends Pane {
 
         drawSquares();
     }
-
 }
