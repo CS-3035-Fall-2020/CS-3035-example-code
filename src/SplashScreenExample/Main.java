@@ -1,4 +1,4 @@
-package SpashScreenExample;
+package SplashScreenExample;
 
 import javafx.animation.FadeTransition;
 import javafx.application.Application;
